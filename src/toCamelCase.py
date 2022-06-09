@@ -1,6 +1,6 @@
 def to_camel_case(text):
     #Checks if text length is zero
-    if(text.length == 0):
+    if(len(text) == 0):
         return 
     #Check to see if there are are - or _ shown then subsitute those out, then adds to the text
     #Also looks at the title
