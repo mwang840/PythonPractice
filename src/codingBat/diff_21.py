@@ -3,3 +3,5 @@ def diff21(n):
         return abs(n - 21)
     else:
         return 2 * abs(n - 21)    
+
+        
