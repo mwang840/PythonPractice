@@ -1,6 +1,7 @@
-import toCamelCase
+from toCamelCase import *
 def main():
-    print("Hello World")
+    camel = "Camel"
+    print(to_camel_case(camel))
     
 if __name__ == "__main__":
     main()    
