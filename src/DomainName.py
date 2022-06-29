@@ -5,7 +5,7 @@ def domain_name(url):
     # or we could use the parse library/check the length of the string
     name = url.split("/")
     domainOnly = ""
-    if(name[0] == "https" or name[2] == "http"):
+    if(name[0] == "https:" or name[0] == "http:"):
         name = name[2].split(".")
     else:
         name = name[0].split(".")
@@ -16,4 +16,4 @@ def domain_name(url):
     else:
         domainOnly = name[1]    
 
-    return name
+    return domainOnly
