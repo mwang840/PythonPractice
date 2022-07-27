@@ -1,16 +1,17 @@
 def good_vs_evil(good, evil):
-    newGood = good.split("")
-    newEvil = evil.split("")
-    worth = {1, 2, 3, 3, 4, 10}
+    newGood = good.split()
+    newEvil = evil.split()
+    worth = [1, 2, 3, 3, 4, 10]
     unWorth = [1, 2, 3, 3, 5, 10]
-    amIgood, amIEvil = 0
+    amIgood = 0
+    amIEvil = 0
 
     for w in worth:
-        amIgood += worth[w] * newGood[w]
+        amIgood += worth[w] * int(newGood[w])
         
 
     for e in evil:
-        amIEvil += unWorth[e] * newEvil[e]
+        amIEvil += unWorth[e] * int(newEvil[e])
 
     if amIgood > amIEvil:
         return "Battle Result: Good eradicates all trace of Evil"
